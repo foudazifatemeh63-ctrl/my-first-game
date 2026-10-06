@@ -1,0 +1,103 @@
+h1 {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-family: 'Forte';
+
+    animation: textFromLeft 1.5s ease-out;
+}
+
+@keyframes textFromLeft {
+    from {
+        transform: translateX(-300px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+body {
+
+  text-align: center;
+
+  background: rgb(110, 147, 160);
+
+  background-image: url("blue.png");
+
+  background-size:cover;
+
+  background-position: center;
+
+  background-repeat: no-repeat;
+
+}
+
+
+button {
+
+  background-color: rgb(248, 247, 249);
+
+  border-radius: 0.5cqw;
+
+  border-color: rgb(255, 255, 255);
+
+  font-size: x-small;
+
+}
+
+input {
+
+  background-color: rgb(151, 145, 187);
+
+  border-radius: 1cqb;
+
+}
+
+div {
+
+  color: steelblue;
+
+}
+.attempts {
+    font-weight: bold;
+}
+
+div {
+
+  color: rgb(253, 253, 253);
+
+  font-family: "Times New Roman", Times, serif;
+
+  font-size: 4svh;
+
+}
+.guess-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    color: aliceblue;
+}
+.logo {
+  width: 100px;
+  animation: logoMove 2s;
+  display: block;
+  margin: 0 auto;
+}
+@keyframes logoMove {
+    from {
+        transform: translateY(-30px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+.overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+}
+
